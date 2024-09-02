@@ -1,0 +1,107 @@
+{
+    "Cachorros": [
+        {
+            "idf": 1, 
+            "title": "Atum",
+            "raça": "Shiba Inu",
+            "idade": "1 ano",
+            "porte": "médio",
+            "image": "./assets/images/atum.jpg"
+        },
+        {
+            "idf": 2,
+            "title": "Linguiça",
+            "raça": "Dachshund",
+            "idade": "4 anos",
+            "porte": "pequeno",
+            "image": "./assets/images/linguiça.jpg"
+        },
+        {
+            "idf": 3,
+            "title": "Laika",
+            "raça": "Pastor Alemão",
+            "idade": "4 anos",
+            "porte": "grande",
+            "image": "./assets/images/laika.jpg"
+        },
+        {
+            "idf": 4,
+            "title": "Cindy",
+            "raça": "Zwergspitz",
+            "idade": "2 anos",
+            "porte": "pequeno",
+            "image": "./assets/images/cindy.jpg"
+        }
+
+    ],
+    "Gatos": [
+        {
+            "idf": 1,
+            "title": "Satoru",
+            "raça": "Angorá", 
+            "idade": "1 ano",
+            "porte": "médio",
+            "image": "./assets/images/satoru.jpg"
+        },
+        {
+            "idf": 2,
+            "title": "Oreo",
+            "raça": "Maine Coon",
+            "idade": "5 anos",
+            "porte": "grande",
+            "image": "./assets/images/oreo.jpg"
+        },
+        {
+            "idf": 3,
+            "title": "Amora",
+            "raça": "SRD",
+            "idade": "5 meses",
+            "porte": "pequeno",
+            "image": "./assets/image/amora.jpg"
+        },
+        {
+            "idf": 4,
+            "title": "Linda",
+            "raça": "British Shorthair",
+            "idade": "10 anos",
+            "porte": "médio",
+            "image": "./assets/images/linda.jpg"
+        }
+
+    ],
+    "Coelhos e Pássaros": [
+        {
+            "idf": 1,
+            "title": "Melody",
+            "raça": "Mini Lop",
+            "idade": "1 mês",
+            "porte": "pequeno",
+            "image": "./assets/images/melody.jpg"
+        },
+        {
+            "idf": 2,
+            "title": "Mingau",
+            "raça": "Angorá",
+            "idade": "2 anos",
+            "porte": "médio",
+            "image": "./assets/images/mingau.jpg"
+        },
+        {
+            "idf": 3,
+            "title": "Megatron",
+            "raça": "calopsita",
+            "idade": "3 meses",
+            "porte": "pequeno",
+            "image": "./assets/images/megatron.jpg"
+        },
+        {
+            "idf": 4,
+            "title": "Nigel",
+            "raça": "cacatua",
+            "idade": "1 ano",
+            "porte": "médio",
+            "image": "./assets/images/nigel.jpg"
+        }
+
+    ]
+}
