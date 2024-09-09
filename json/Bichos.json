@@ -69,7 +69,7 @@
         }
 
     ],
-    "Coelhos e Pássaros": [
+    "Coelhos": [
         {
             "idf": 1,
             "title": "Melody",
@@ -85,9 +85,11 @@
             "idade": "2 anos",
             "porte": "médio",
             "image": "./assets/images/mingau.jpg"
-        },
+        }
+    ],
+    "Passaros": [
         {
-            "idf": 3,
+            "idf": 1,
             "title": "Megatron",
             "raça": "calopsita",
             "idade": "3 meses",
@@ -95,13 +97,12 @@
             "image": "./assets/images/megatron.jpg"
         },
         {
-            "idf": 4,
+            "idf": 2,
             "title": "Nigel",
             "raça": "cacatua",
             "idade": "1 ano",
             "porte": "médio",
             "image": "./assets/images/nigel.jpg"
         }
-
     ]
 }
