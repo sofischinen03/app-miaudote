@@ -1,11 +1,16 @@
 import { Tabs } from "expo-router";
 import React from "react";
 import { useFonts } from 'expo-font';
-import * as SplashScreen from 'expo-splash-screen';
+
+
 
 import { TabBarIcon } from "@/components/navigation/TabBarIcon";
 import { Colors } from "@/constants/Colors";
 import { useColorScheme } from "@/hooks/useColorScheme";
+import { FontAwesomeIcon } from '@fortawesome/react-native-fontawesome';
+import { faDog, faHome, faStar } from '@fortawesome/free-solid-svg-icons';
+
+
 
 export default function TabLayout() {
   const colorScheme = useColorScheme();
@@ -24,36 +29,30 @@ export default function TabLayout() {
         name="animais"
         options={{
           title: "animais",
-          tabBarIcon: ({ color, focused }) => (
-            <TabBarIcon
-              name={focused ? "book" : "book"}
-              color={color}
-            />
+          tabBarIcon: ({ tintColor }) => (
+            <FontAwesomeIcon icon={faDog} color={tintColor} size={24} />
           ),
+
         }}
       />
       <Tabs.Screen
         name="index"
         options={{
-          title: "Inicio",
-          tabBarIcon: ({ color, focused }) => (
-            <TabBarIcon
-              name={focused ? "home" : "home-outline"}
-              color={color}
-            />
+          title: "animais",
+          tabBarIcon: ({ tintColor }) => (
+            <FontAwesomeIcon icon={faHome} color={tintColor} size={24} />
           ),
+
         }}
       />
       <Tabs.Screen
         name="sobre"
         options={{
-          title: "sobre",
-          tabBarIcon: ({ color, focused }) => (
-            <TabBarIcon
-              name={focused ? "star" : "star"}
-              color={color}
-            />
+          title: "animais",
+          tabBarIcon: ({ tintColor }) => (
+            <FontAwesomeIcon icon={faStar} color={tintColor} size={24} />
           ),
+
         }}
       />
     </Tabs>

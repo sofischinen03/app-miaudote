@@ -9,7 +9,7 @@ export default function Index() {
        style = {styles.perfil}>
 
        </Image>
-       <Text style = {{}}> Sofia Mieko Galvão Chinen da Costa</Text>
+       <Text> Sofia Mieko Galvão Chinen da Costa</Text>
       </View>
 
       <Image
@@ -48,7 +48,8 @@ navzinha:{
 perfil:{
   width: 50,
   height: 50,
-  borderRadius: 100
+  borderRadius: 100,
+  
 },
 
 
