@@ -1,20 +1,13 @@
-import { Tabs } from "expo-router";
-import React from "react";
+import { Tabs } from 'expo-router';
 import { useFonts } from 'expo-font';
-
-
-
-import { TabBarIcon } from "@/components/navigation/TabBarIcon";
-import { Colors } from "@/constants/Colors";
-import { useColorScheme } from "@/hooks/useColorScheme";
 import { FontAwesomeIcon } from '@fortawesome/react-native-fontawesome';
 import { faDog, faHome, faStar } from '@fortawesome/free-solid-svg-icons';
-
-
+import { Colors } from '@/constants/Colors';
+import { useColorScheme } from '@/hooks/useColorScheme';
 
 export default function TabLayout() {
   const colorScheme = useColorScheme();
-  const [loaded, error] = useFonts({
+  const [loaded] = useFonts({
     'Ubuntu-Bold': require("../assets/fonts/Ubuntu-Bold.ttf"),
   });
 
@@ -26,33 +19,30 @@ export default function TabLayout() {
       }}
     >
       <Tabs.Screen
-        name="animais"
+        name="listaranimais"
         options={{
-          title: "animais",
+          title: "Animais",
           tabBarIcon: ({ tintColor }) => (
             <FontAwesomeIcon icon={faDog} color={tintColor} size={24} />
           ),
-
         }}
       />
       <Tabs.Screen
         name="index"
         options={{
-          title: "animais",
+          title: "Início",
           tabBarIcon: ({ tintColor }) => (
             <FontAwesomeIcon icon={faHome} color={tintColor} size={24} />
           ),
-
         }}
       />
       <Tabs.Screen
         name="sobre"
         options={{
-          title: "animais",
+          title: "Sobre",
           tabBarIcon: ({ tintColor }) => (
             <FontAwesomeIcon icon={faStar} color={tintColor} size={24} />
           ),
-
         }}
       />
     </Tabs>
