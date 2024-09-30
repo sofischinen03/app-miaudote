@@ -5,6 +5,10 @@ export default function RootLayout() {
     <Stack>
       <Stack.Screen 
         name="index" 
+        options={{ title: "O que deseja adotar?" }} 
+      />
+      <Stack.Screen 
+        name="lista" 
         options={{ title: "Lista de Animais" }} 
       />
       <Stack.Screen 

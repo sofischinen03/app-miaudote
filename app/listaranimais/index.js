@@ -3,6 +3,14 @@ import { useRouter } from "expo-router";
 
 export default function Animais() {
   const router = useRouter();
+
+  const handleNavigate = (tipo) => {
+    router.push({
+      pathname: 'lista',
+      params: { tipo },
+    });
+  };
+
   return (
     <SafeAreaView style={{
       flex: 1,
@@ -31,13 +39,13 @@ export default function Animais() {
       <View style = {{marginHorizontal: 10}}>
       <Image style = {styles.icones} source = {'../assets/images/cachorro.png'}/>
       <Button style = {styles.button} color= "#d6408e" title= "Cachorros"
-      onPress={() => router.push("bixossingle/cachorros")} ></Button>
+      onPress={() => router.push('/listaranimais/lista?tipo=Cachorros')}  ></Button>
       </View>
       <View
       >
       <Image style = {styles.icones} source = {'../assets/images/gato.png'}/>
       <Button style = {styles.button} color= "#d6408e" title= "Gatos"
-      onPress={() => router.push("bixossingle/gatos")}></Button>
+      onPress={() => router.push('/listaranimais/lista?tipo=Gatos')}></Button>
       </View>
     </View>
 
@@ -52,13 +60,13 @@ export default function Animais() {
       <View style = {{marginHorizontal: 10}}>
           <Image style = {styles.icones} source = {'../assets/images/coelho.png'}/>
           <Button style = {styles.button} color= "#d6408e" title= "Coelhos"
-          onPress={() => router.push("bixossingle/coelhos")}></Button>
+          onPress={() => router.push('/listaranimais/lista?tipo=Coelhos')} ></Button>
       </View>
       
       <View>
       <Image style = {styles.icones} source = {'../assets/images/papagaio.png'}/>
       <Button style = {styles.button}  color= "#d6408e" title= "Pássaros"
-      onPress={() => router.push("bixossingle/passaros")} ></Button>
+      onPress={() => router.push('/listaranimais/lista?tipo=Passaros')}  ></Button>
       </View>
     </View>
     </View>
